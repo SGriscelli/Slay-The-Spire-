@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+nav {
+    padding: 10px;
+}
+
+
+h1, h2, p {
+    padding: 0 15px; 
+}
+
+
+@media (max-width: 990px) {
+    p {
+        display: flex;
+        justify-content: center; 
+        text-align: center; 
+        padding: 0 10px; /* Ajoute de l'espace horizontal */
+    }
+    
+    .buttons,
+    .relics,
+    .suite,
+    footer {
+        padding: 10px;
+        width: 90%; /* Ajuste la largeur pour éviter les débordements */
+        margin: 0 auto; /* Centre les sections */
+    }
+
+    .buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 5px; /* Espace entre les boutons */
+    }
+    
+    .Bonhommes img,
+    .relics img {
+        width: 100%;
+        height: auto; /* Garde le ratio d'aspect */
+    }
+}
+
+/* Media Query pour les écrans jusqu'à 480px */
+@media (max-width: 480px) { 
+    body {
+        max-width: 100%; /* Assure que le corps ne déborde pas */
+    }
+    
+    h1 {
+        font-size: 1.5rem; /* Ajuste la taille du titre principal */
+    }
+
+    h2 {
+        font-size: 1rem; /* Ajuste la taille du sous-titre */
+        padding: 15px; /* Ajoute un peu d'espace autour */
+    }
+
+    footer {
+        font-size: 0.875rem; /* Réduit la taille de la police dans le pied de page */
+    }
+
+    .buttons {
+        flex-direction: row; /* Aligne les boutons en ligne */
+        justify-content: center; /* Centre les boutons */
+        gap: 5px; /* Espace entre les boutons */
+        padding: 5px; /* Réduit l'espace autour */
+        width: 90%; /* Centre les boutons */
+        margin: 0 auto; /* Centre les boutons */
+    }
+
+    .logosts {
+        width: 90%; /* Ajuste la largeur du logo */
+    }
+}
